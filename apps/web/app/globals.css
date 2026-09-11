@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-space), ui-sans-serif, system-ui, sans-serif;
+  --font-construction: var(--font-oswald), ui-sans-serif, system-ui, sans-serif;
+
+  --color-plaster: oklch(0.955 0.012 75);
+  --color-plaster-2: oklch(0.93 0.015 72);
+  --color-rust: oklch(0.47 0.13 42);
+  --color-rust-2: oklch(0.4 0.12 40);
+
+  --color-tech: oklch(0.47 0.19 258);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: oklch(0.47 0.13 42);
+    color: #fff;
+    background: oklch(0.6 0.15 245);
+    color: #fff;
+  }
+}
+
+@utility container-site {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 72rem;
+  padding-inline: 1.25rem;
+
+  @media (min-width: 768px) {
+    padding-inline: 2rem;
+  }
+}
+
+@utility grid-lines {
+  background-image: linear-gradient(
+      to right,
+      oklch(0.3 0.05 42 / 0.07) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, oklch(0.3 0.05 42 / 0.07) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+@utility reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &.is-shown {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility divider-accent {
+  position: relative;
+  height: 3px;
+  width: 5rem;
+  border-radius: 999px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 40%;
+    border-radius: 999px;
+    background: oklch(0.47 0.13 42);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "al-pacino",
+  "private": true,
+  "packageManager": "pnpm@12.4.1",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "check": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0"
+  }
+}

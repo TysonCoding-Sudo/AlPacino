@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+dist/
+turbo/.cache/
+.turbo/
+*.tsbuildinfo
+pnpm-debug.log*
+next-env.d.ts
+.DS_Store
