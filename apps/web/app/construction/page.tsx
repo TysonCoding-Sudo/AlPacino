@@ -9,7 +9,7 @@ import {
   ShieldCheck,
   Landmark,
 } from "lucide-react";
-import { constructionServices } from "@al-pacino/shared";
+import { constructionServices } from "@ai-pacino/shared";
 import { Reveal } from "@/components/Reveal";
 import { PageHero, SectionHeading, ServiceCard, CtaBanner } from "@/components/section";
 
@@ -112,7 +112,7 @@ export default function ConstructionHub() {
               City of Ekurhuleni
             </h2>
             <p className="mt-5 text-base leading-relaxed text-stone-600">
-              Al Pacino is appointed to the City of Ekurhuleni&apos;s{" "}
+              AI Pacino is appointed to the City of Ekurhuleni&apos;s{" "}
               <strong className="font-semibold text-stone-900">
                 Panel of Electrical Engineers
               </strong>{" "}

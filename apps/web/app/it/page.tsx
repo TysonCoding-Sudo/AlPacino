@@ -22,7 +22,7 @@ import {
   itValues,
   itApproach,
   itWhyUs,
-} from "@al-pacino/shared";
+} from "@ai-pacino/shared";
 import { Reveal } from "@/components/Reveal";
 import { PageHero, SectionHeading, ServiceCard, CtaBanner } from "@/components/section";
 
@@ -129,7 +129,7 @@ export default function ItHub() {
           <Reveal>
             <SectionHeading
               tone="tech"
-              eyebrow="Why Al Pacino ICT"
+              eyebrow="Why AI Pacino ICT"
               title="Six reasons to choose us"
               align="center"
             />

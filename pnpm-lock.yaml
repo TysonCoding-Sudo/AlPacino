@@ -172,7 +172,7 @@ importers:
 
   apps/web:
     dependencies:
-      '@al-pacino/shared':
+      '@ai-pacino/shared':
         specifier: workspace:*
         version: link:../../packages/shared
       lucide-react:

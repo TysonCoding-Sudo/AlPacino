@@ -9,7 +9,7 @@ import {
   UserRound,
   Landmark,
 } from "lucide-react";
-import { company } from "@al-pacino/shared";
+import { company } from "@ai-pacino/shared";
 import { Reveal } from "@/components/Reveal";
 import { CtaBanner } from "@/components/section";
 import { CertificationBadge } from "@/components/CertificationBadge";
@@ -249,7 +249,7 @@ export default function HomePage() {
               On the City of Ekurhuleni&apos;s panel
             </h2>
             <p className="mt-5 text-base leading-relaxed text-stone-600">
-              Al Pacino is appointed to the municipal{" "}
+              AI Pacino is appointed to the municipal{" "}
               <strong className="font-semibold text-stone-900">
                 Panel of Electrical Engineers
               </strong>{" "}

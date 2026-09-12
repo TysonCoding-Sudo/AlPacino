@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk, Oswald } from "next/font/google";
-import { company } from "@al-pacino/shared";
+import { company } from "@ai-pacino/shared";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
@@ -24,15 +24,15 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://alpacino.co.za"),
+  metadataBase: new URL("https://aipacino.co.za"),
   title: {
     default: `${company.name} — Construction & ICT Solutions, South Africa`,
-    template: "%s | Al Pacino (Pty) Ltd",
+    template: "%s | AI Pacino (Pty) Ltd",
   },
   description:
     `${company.name} is an owner-managed South African company delivering Construction services (roadworks, water, electrical, HVAC, landscaping, fencing) and end-to-end ICT Solutions from assessment and supply to support.`,
   keywords: [
-    "Al Pacino Pty Ltd",
+    "AI Pacino Pty Ltd",
     "construction South Africa",
     "roadworks",
     "water infrastructure",

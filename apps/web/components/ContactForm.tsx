@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { Send, Loader2, CheckCircle2 } from "lucide-react";
-import { company } from "@al-pacino/shared";
+import { company } from "@ai-pacino/shared";
 
 export function ContactForm() {
   const [sent, setSent] = useState(false);

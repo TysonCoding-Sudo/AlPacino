@@ -8,7 +8,7 @@ import {
   Leaf,
   ShieldCheck,
 } from "lucide-react";
-import { constructionServices } from "@al-pacino/shared";
+import { constructionServices } from "@ai-pacino/shared";
 import { Reveal } from "@/components/Reveal";
 import { PageHero, CtaBanner } from "@/components/section";
 

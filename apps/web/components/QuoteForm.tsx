@@ -8,7 +8,7 @@ import {
   Construction,
   Wifi,
 } from "lucide-react";
-import { company, constructionServices, itServices } from "@al-pacino/shared";
+import { company, constructionServices, itServices } from "@ai-pacino/shared";
 
 export function QuoteForm() {
   const [division, setDivision] = useState<"construction" | "it" | "">("");

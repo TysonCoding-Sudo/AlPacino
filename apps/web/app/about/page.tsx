@@ -8,7 +8,7 @@ import {
   BadgeCheck,
   CheckCircle2,
 } from "lucide-react";
-import { company, itValues } from "@al-pacino/shared";
+import { company, itValues } from "@ai-pacino/shared";
 import { Reveal } from "@/components/Reveal";
 import { PageHero, CtaBanner } from "@/components/section";
 

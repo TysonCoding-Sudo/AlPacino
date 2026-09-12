@@ -9,7 +9,7 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@al-pacino/shared": "workspace:*",
+    "@ai-pacino/shared": "workspace:*",
     "lucide-react": "^0.475.0",
     "next": "^16.0.0",
     "react": "^19.2.0",

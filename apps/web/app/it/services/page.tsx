@@ -14,7 +14,7 @@ import {
   ClipboardList,
   Repeat,
 } from "lucide-react";
-import { itServices } from "@al-pacino/shared";
+import { itServices } from "@ai-pacino/shared";
 import { Reveal } from "@/components/Reveal";
 import { PageHero, CtaBanner } from "@/components/section";
 

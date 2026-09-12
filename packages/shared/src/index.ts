@@ -1,6 +1,6 @@
 export const company = {
-  name: "Al Pacino (Pty) Ltd",
-  shortName: "Al Pacino",
+  name: "AI Pacino (Pty) Ltd",
+  shortName: "AI Pacino",
   registration: "2015/335068/07",
   certification: "SABS ISO 9001 Certified",
   tagline: "Built. Connected.",
@@ -39,7 +39,7 @@ export const divisions: Record<DivisionId, Division> = {
     personality: "rugged — built on concrete delivery",
     path: "/construction",
     meta: {
-      title: "Construction | Al Pacino (Pty) Ltd",
+      title: "Construction | AI Pacino (Pty) Ltd",
       description:
         "Roadworks, water infrastructure, electrical engineering, HVAC commissioning and maintenance, landscaping and fencing — delivered to the highest standards of workmanship and professionalism.",
     },
@@ -53,7 +53,7 @@ export const divisions: Record<DivisionId, Division> = {
     personality: "clean — precise and reliable",
     path: "/it",
     meta: {
-      title: "ICT Solutions | Al Pacino (Pty) Ltd",
+      title: "ICT Solutions | AI Pacino (Pty) Ltd",
       description:
         "From assessment and supply to installation, integration and ongoing support — end-to-end ICT solutions built around customer focus, quality and reliability.",
     },

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Construction | Al Pacino (Pty) Ltd",
+  title: "Construction",
   description:
     "Roadworks, water infrastructure, electrical engineering, HVAC commissioning and maintenance, landscaping and fencing — delivered to the highest standards of workmanship and professionalism.",
 };

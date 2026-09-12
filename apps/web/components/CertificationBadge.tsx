@@ -1,5 +1,5 @@
 import { BadgeCheck } from "lucide-react";
-import { company } from "@al-pacino/shared";
+import { company } from "@ai-pacino/shared";
 
 export function CertificationBadge({
   className = "",

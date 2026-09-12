@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
-import { itApproach } from "@al-pacino/shared";
+import { itApproach } from "@ai-pacino/shared";
 import { Reveal } from "@/components/Reveal";
 import { PageHero, CtaBanner } from "@/components/section";
 

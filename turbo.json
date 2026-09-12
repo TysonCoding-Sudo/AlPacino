@@ -12,7 +12,7 @@
     "lint": {
       "outputs": []
     },
-    "@al-pacino/shared#build": {
+    "@ai-pacino/shared#build": {
       "outputs": []
     }
   }

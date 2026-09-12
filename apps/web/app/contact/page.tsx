@@ -6,7 +6,7 @@ import {
   MessageCircle,
   Building2,
 } from "lucide-react";
-import { company } from "@al-pacino/shared";
+import { company } from "@ai-pacino/shared";
 import { Reveal } from "@/components/Reveal";
 import { PageHero } from "@/components/section";
 import { ContactForm } from "@/components/ContactForm";

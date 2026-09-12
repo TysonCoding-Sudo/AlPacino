@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Landmark, Calendar, Building } from "lucide-react";
-import { constructionTrackRecord } from "@al-pacino/shared";
+import { constructionTrackRecord } from "@ai-pacino/shared";
 import { Reveal } from "@/components/Reveal";
 import { PageHero, CtaBanner } from "@/components/section";
 

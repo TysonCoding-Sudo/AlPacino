@@ -1,5 +1,5 @@
 {
-  "name": "@al-pacino/shared",
+  "name": "@ai-pacino/shared",
   "version": "0.1.0",
   "private": true,
   "main": "./src/index.ts",

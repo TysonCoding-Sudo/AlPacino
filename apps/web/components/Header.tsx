@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LayoutGrid, Menu, X, HardHat, Wifi } from "lucide-react";
-import { company } from "@al-pacino/shared";
+import { company } from "@ai-pacino/shared";
 
 const nav = [
   { href: "/", label: "Home" },
