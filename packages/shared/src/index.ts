@@ -7,10 +7,11 @@ export const company = {
   address: "26 Logan Avenue, Highveld, 0157, Gauteng",
   country: "South Africa",
   footprint: "National footprint — operating South Africa-wide",
-  phones: ["064 662 2634", "082 657 9345"],
+  phones: ["064 662 2634", "064 662 2335", "082 657 9345"],
   phonePrimary: "064 662 2634",
+  fax: "086 608 2335",
   whatsapp: "27646622634",
-  email: "rodneybitsi@gmail.com",
+  email: "Rodneybitsi@gmail.com",
   openingHours: "Mon – Fri · 08:00 – 17:00",
 } as const;
 

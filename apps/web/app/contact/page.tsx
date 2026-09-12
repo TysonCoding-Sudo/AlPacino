@@ -1,6 +1,7 @@
 import {
   MapPin,
   Phone,
+  Printer,
   Mail,
   Clock,
   MessageCircle,
@@ -32,6 +33,13 @@ const channels = [
     lines: ["Send us your project details."],
     href: `mailto:${company.email}`,
     linkLabel: company.email,
+  },
+  {
+    icon: Printer,
+    title: "Fax",
+    lines: ["Send documents to our fax line."],
+    href: `tel:${company.fax.replace(/\s/g, "")}`,
+    linkLabel: company.fax,
   },
 ];
 

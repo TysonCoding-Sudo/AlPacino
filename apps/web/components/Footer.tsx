@@ -100,9 +100,7 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-2.5">
               <Phone className="h-4 w-4 shrink-0 text-amber-500" />
-              <span>
-                {company.phonePrimary} {company.phones[1] && `/ ${company.phones[1]}`}
-              </span>
+              <span>{company.phones.join(" / ")}</span>
             </li>
             <li className="flex items-center gap-2.5">
               <Mail className="h-4 w-4 shrink-0 text-amber-500" />
