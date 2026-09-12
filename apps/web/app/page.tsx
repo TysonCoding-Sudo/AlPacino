@@ -12,6 +12,7 @@ import {
 import { company } from "@al-pacino/shared";
 import { Reveal } from "@/components/Reveal";
 import { CtaBanner } from "@/components/section";
+import { CertificationBadge } from "@/components/CertificationBadge";
 
 const trust = [
   {
@@ -71,6 +72,12 @@ export default function HomePage() {
               >
                 Request a quote
               </Link>
+            </div>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <CertificationBadge />
+              <span className="text-sm text-stone-400">
+                Quality Management System · audited to ISO 9001
+              </span>
             </div>
           </div>
 

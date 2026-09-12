@@ -2,6 +2,7 @@ export const company = {
   name: "Al Pacino (Pty) Ltd",
   shortName: "Al Pacino",
   registration: "2015/335068/07",
+  certification: "SABS ISO 9001 Certified",
   tagline: "Built. Connected.",
   address: "26 Logan Avenue, Highveld, 0157, Gauteng",
   country: "South Africa",

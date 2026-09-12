@@ -5,6 +5,7 @@ import {
   Landmark,
   Phone,
   Mail,
+  BadgeCheck,
   CheckCircle2,
 } from "lucide-react";
 import { company, itValues } from "@al-pacino/shared";
@@ -128,6 +129,7 @@ export default function AboutPage() {
                 </p>
                 {[
                   { icon: ShieldCheck, text: `Registered: ${company.registration}` },
+                  { icon: BadgeCheck, text: `${company.certification} — Quality Management System` },
                   { icon: MapPinned, text: company.footprint },
                   { icon: Landmark, text: "City of Ekurhuleni — Panel of Electrical Engineers & HVAC" },
                   { icon: UserRound, text: "Owner-managed, accountable leadership" },

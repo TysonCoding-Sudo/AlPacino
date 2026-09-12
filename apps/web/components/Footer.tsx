@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, BadgeCheck } from "lucide-react";
 import { company } from "@al-pacino/shared";
 
 export function Footer() {
@@ -26,6 +26,10 @@ export function Footer() {
           </p>
           <p className="mt-4 text-xs text-stone-500">
             Reg. No: {company.registration}
+          </p>
+          <p className="mt-1.5 flex items-center gap-1.5 text-xs text-amber-400/90">
+            <BadgeCheck className="h-3.5 w-3.5" />
+            {company.certification}
           </p>
         </div>
 
