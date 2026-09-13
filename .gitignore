@@ -8,3 +8,8 @@ turbo/.cache/
 pnpm-debug.log*
 next-env.d.ts
 .DS_Store
+
+# environment & local config — never commit secrets
+.env*
+!.env.example
+.vercel/

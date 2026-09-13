@@ -167,7 +167,7 @@ export function QuoteForm() {
               type="text"
               name="location"
               id="q-location"
-              placeholder="e.g. Pretoria, Gauteng"
+              placeholder="e.g. Lenyenye, Limpopo"
               className="mt-1.5 block w-full rounded-lg border border-stone-300 px-3.5 py-2.5 text-sm text-stone-900 outline-none transition-colors placeholder:text-stone-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
             />
           </div>

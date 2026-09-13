@@ -24,7 +24,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aipacino.co.za"),
+  metadataBase: new URL("https://aipacino.org"),
   title: {
     default: `${company.name} — Construction & ICT Solutions, South Africa`,
     template: "%s | AI Pacino (Pty) Ltd",

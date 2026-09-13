@@ -4,11 +4,13 @@ export const company = {
   registration: "2015/335068/07",
   certification: "SABS ISO 9001 Certified",
   tagline: "Built. Connected.",
-  address: "26 Logan Avenue, Highveld, 0157, Gauteng",
+  address: "1457 Sedikodiko, Lenyenye, Limpopo, 0857",
+  mapsUrl:
+    "https://www.google.com/maps/search/?api=1&query=1457+Sedikodiko,+Lenyenye,+Limpopo,+0857",
   country: "South Africa",
   footprint: "National footprint — operating South Africa-wide",
-  phones: ["064 662 2634", "064 662 2335", "082 657 9345"],
-  phonePrimary: "064 662 2634",
+  phones: ["064 662 2335", "082 657 9345"],
+  phonePrimary: "064 662 2335",
   fax: "086 608 2335",
   whatsapp: "27646622634",
   email: "Rodneybitsi@gmail.com",
@@ -237,7 +239,7 @@ export const itWhyUs = [
   "Experienced, accredited technical team",
   "Customer-centric methodologies and clear communication",
   "Competitive, transparent and cost-effective pricing",
-  "National footprint with Gauteng head office",
+  "National footprint with Limpopo head office",
   "Long-term partnerships over short-term sales",
 ];
 

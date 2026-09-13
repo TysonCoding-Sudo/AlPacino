@@ -16,7 +16,7 @@ const timeline = [
   {
     year: "2015",
     title: "Registered",
-    body: `${company.name} registered in South Africa (Reg. No: ${company.registration}). Head office established in Gauteng.`,
+    body: `${company.name} registered in South Africa (Reg. No: ${company.registration}). Head office established in Limpopo.`,
   },
   {
     year: "Construction",
@@ -89,7 +89,7 @@ export default function AboutPage() {
                     Head office
                   </p>
                   <p className="mt-1 text-sm font-medium text-stone-900">
-                    Gauteng, South Africa
+                    Limpopo, South Africa
                   </p>
                 </div>
                 <div className="rounded-xl bg-plaster p-4">

@@ -75,7 +75,23 @@ export default function ContactPage() {
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-amber-700" />
                 <div>
                   <p className="text-sm font-semibold text-stone-900">Head office</p>
-                  <p className="mt-1 text-sm text-stone-600">{company.address}</p>
+                  <a
+                    href={company.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 block text-sm text-stone-600 transition-colors hover:text-amber-800"
+                  >
+                    {company.address}
+                  </a>
+                  <a
+                    href={company.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1.5 inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 hover:underline"
+                  >
+                    <MapPin className="h-3.5 w-3.5" />
+                    Open in Google Maps
+                  </a>
                 </div>
               </div>
             </Reveal>

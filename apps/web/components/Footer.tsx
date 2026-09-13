@@ -96,7 +96,14 @@ export function Footer() {
           <ul className="mt-4 space-y-3 text-sm text-stone-400">
             <li className="flex items-start gap-2.5">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-amber-500" />
-              {company.address}
+              <a
+                href={company.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-white"
+              >
+                {company.address}
+              </a>
             </li>
             <li className="flex items-center gap-2.5">
               <Phone className="h-4 w-4 shrink-0 text-amber-500" />

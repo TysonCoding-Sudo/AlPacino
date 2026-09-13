@@ -23,7 +23,7 @@ const trust = [
   {
     icon: MapPinned,
     title: "National footprint",
-    body: "Gauteng head office, active across South Africa",
+    body: "Limpopo head office, active across South Africa",
   },
   {
     icon: Landmark,
