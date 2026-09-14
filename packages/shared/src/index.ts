@@ -4,16 +4,27 @@ export const company = {
   registration: "2015/335068/07",
   certification: "SABS ISO 9001 Certified",
   tagline: "Built. Connected.",
-  address: "1457 Sedikodiko, Lenyenye, Limpopo, 0857",
-  mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=1457+Sedikodiko,+Lenyenye,+Limpopo,+0857",
+  addresses: [
+    {
+      label: "Head office",
+      value: "1457 Sedikodiko, Lenyenye, Limpopo, 0857",
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=1457+Sedikodiko,+Lenyenye,+Limpopo,+0857",
+    },
+    {
+      label: "Centurion office",
+      value: "29 Laborie, Die Hoewes, Centurion, 0157",
+      mapsUrl:
+        "https://www.google.com/maps/search/?api=1&query=29+Laborie,+Die+Hoewes,+Centurion,+0157",
+    },
+  ],
   country: "South Africa",
   footprint: "National footprint — operating South Africa-wide",
   phones: ["064 662 2335", "082 657 9345"],
   phonePrimary: "064 662 2335",
   fax: "086 608 2335",
   whatsapp: "27646622634",
-  email: "Rodneybitsi@gmail.com",
+  email: "bitsi@aipacino.co.za",
   openingHours: "Mon – Fri · 08:00 – 17:00",
 } as const;
 

@@ -173,7 +173,7 @@ After all transfers, test from the client's accounts:
 | Robots.txt | https://www.aipacino.org/robots.txt | Shows AI-bot blocking rules |
 | Sitemap | https://www.aipacino.org/sitemap.xml | Shows all routes |
 | Security.txt | https://www.aipacino.org/.well-known/security.txt | Shows disclosure contact |
-| Google Maps link (footer + contact) | Click the address | Opens Google Maps at Lenyenye |
+| Google Maps link (footer + contact) | Click the address | Opens Google Maps — Lenyenye & Centurion office links |
 | Push to GitHub triggers deploy | Push any commit to `main` | Vercel builds and deploys |
 
 ### Step 5 — Sign off
@@ -295,11 +295,11 @@ If the business relationship ends, revoke access on each platform in this order:
 |---|---|
 | Client company | AI Pacino (Pty) Ltd |
 | Registration | 2015/335068/07 |
-| Address | 1457 Sedikodiko, Lenyenye, Limpopo, 0857 |
+| Address | Head office: 1457 Sedikodiko, Lenyenye, Limpopo, 0857 — Centurion office: 29 Laborie, Die Hoewes, Centurion, 0157 |
 | Phones | 064 662 2335 / 082 657 9345 |
 | WhatsApp | +27 64 662 2634 |
-| Email | Rodneybitsi@gmail.com |
-| Google Maps | [Open in Maps](https://www.google.com/maps/search/?api=1&query=1457+Sedikodiko,+Lenyenye,+Limpopo,+0857) |
+| Email | bitsi@aipacino.co.za |
+| Google Maps | [Lenyenye](https://www.google.com/maps/search/?api=1&query=1457+Sedikodiko,+Lenyenye,+Limpopo,+0857) · [Centurion](https://www.google.com/maps/search/?api=1&query=29+Laborie,+Die+Hoewes,+Centurion,+0157) |
 
 ---
 

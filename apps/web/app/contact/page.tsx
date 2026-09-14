@@ -73,25 +73,32 @@ export default function ContactPage() {
             <Reveal>
               <div className="flex items-start gap-4 rounded-2xl border border-stone-200 bg-white p-5">
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-amber-700" />
-                <div>
-                  <p className="text-sm font-semibold text-stone-900">Head office</p>
-                  <a
-                    href={company.mapsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-1 block text-sm text-stone-600 transition-colors hover:text-amber-800"
-                  >
-                    {company.address}
-                  </a>
-                  <a
-                    href={company.mapsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-1.5 inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 hover:underline"
-                  >
-                    <MapPin className="h-3.5 w-3.5" />
-                    Open in Google Maps
-                  </a>
+                <div className="space-y-4">
+                  <p className="text-sm font-semibold text-stone-900">Offices</p>
+                  {company.addresses.map((a) => (
+                    <div key={a.label}>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-stone-500">
+                        {a.label}
+                      </p>
+                      <a
+                        href={a.mapsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-1 block text-sm text-stone-600 transition-colors hover:text-amber-800"
+                      >
+                        {a.value}
+                      </a>
+                      <a
+                        href={a.mapsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-1.5 inline-flex items-center gap-1.5 text-sm font-medium text-amber-800 hover:underline"
+                      >
+                        <MapPin className="h-3.5 w-3.5" />
+                        Open in Google Maps
+                      </a>
+                    </div>
+                  ))}
                 </div>
               </div>
             </Reveal>
