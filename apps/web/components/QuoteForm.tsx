@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import {
-  Send,
   MessageCircle,
   CheckCircle2,
   Construction,
@@ -10,12 +9,16 @@ import {
 } from "lucide-react";
 import { company, constructionServices, itServices } from "@ai-pacino/shared";
 
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
 export function QuoteForm() {
   const [division, setDivision] = useState<"construction" | "it" | "">("");
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
 
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setError("");
     const form = new FormData(e.currentTarget);
     const name = (form.get("name") as string || "").trim();
     const email = (form.get("email") as string || "").trim();
@@ -23,6 +26,33 @@ export function QuoteForm() {
     const service = (form.get("service") as string || "").trim();
     const location = (form.get("location") as string || "").trim();
     const message = (form.get("message") as string || "").trim();
+
+    if (!division) {
+      setError("Please choose a division first.");
+      return;
+    }
+    if (!name || !email || !message) {
+      setError("Please fill in your name, email and requirements.");
+      return;
+    }
+    if (!EMAIL_PATTERN.test(email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+    if (
+      name.length > 100 ||
+      email.length > 254 ||
+      phone.length > 30 ||
+      location.length > 200 ||
+      message.length > 2000
+    ) {
+      setError("One or more fields are too long. Please shorten and try again.");
+      return;
+    }
+    if (/[\r\n]/.test(name) || /[\r\n]/.test(email)) {
+      setError("Name and email cannot contain line breaks.");
+      return;
+    }
 
     const lines = [
       `Quote request`,
@@ -116,6 +146,8 @@ export function QuoteForm() {
               name="name"
               id="q-name"
               required
+              maxLength={100}
+              autoComplete="name"
               className="mt-1.5 block w-full rounded-lg border border-stone-300 px-3.5 py-2.5 text-sm text-stone-900 outline-none transition-colors placeholder:text-stone-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
             />
           </div>
@@ -128,6 +160,8 @@ export function QuoteForm() {
               name="email"
               id="q-email"
               required
+              maxLength={254}
+              autoComplete="email"
               className="mt-1.5 block w-full rounded-lg border border-stone-300 px-3.5 py-2.5 text-sm text-stone-900 outline-none transition-colors placeholder:text-stone-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
             />
           </div>
@@ -139,6 +173,8 @@ export function QuoteForm() {
               type="tel"
               name="phone"
               id="q-phone"
+              maxLength={30}
+              autoComplete="tel"
               className="mt-1.5 block w-full rounded-lg border border-stone-300 px-3.5 py-2.5 text-sm text-stone-900 outline-none transition-colors placeholder:text-stone-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
             />
           </div>
@@ -167,6 +203,7 @@ export function QuoteForm() {
               type="text"
               name="location"
               id="q-location"
+              maxLength={200}
               placeholder="e.g. Lenyenye, Limpopo"
               className="mt-1.5 block w-full rounded-lg border border-stone-300 px-3.5 py-2.5 text-sm text-stone-900 outline-none transition-colors placeholder:text-stone-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
             />
@@ -184,10 +221,20 @@ export function QuoteForm() {
             id="q-message"
             rows={4}
             required
+            maxLength={2000}
             placeholder="Tell us what you need, any deadlines, and anything else we should know."
             className="mt-1.5 block w-full resize-none rounded-lg border border-stone-300 px-3.5 py-2.5 text-sm text-stone-900 outline-none transition-colors placeholder:text-stone-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
           />
         </div>
+      )}
+
+      {division && error && (
+        <p
+          role="alert"
+          className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800"
+        >
+          {error}
+        </p>
       )}
 
       {division && (

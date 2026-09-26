@@ -9,6 +9,8 @@ const securityHeaders = [
   { key: "X-Frame-Options", value: "DENY" },
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+  { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
   {
     key: "Permissions-Policy",
     value:
@@ -19,10 +21,7 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   transpilePackages: ["@ai-pacino/shared"],
   async headers() {
-    return [
-      { source: "/:path*", headers: securityHeaders },
-      { source: "/_next/:path*", headers: securityHeaders },
-    ];
+    return [{ source: "/:path*", headers: securityHeaders }];
   },
 };
 

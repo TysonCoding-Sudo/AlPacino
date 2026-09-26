@@ -1,8 +1,11 @@
 import type { MetadataRoute } from "next";
+import { company } from "@ai-pacino/shared";
+
+const LAST_CONTENT_UPDATE = new Date("2026-09-14");
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://aipacino.org";
-  const lastModified = new Date();
+  const base = company.siteUrl;
+  const lastModified = LAST_CONTENT_UPDATE;
 
   return [
     { url: base, lastModified, changeFrequency: "monthly", priority: 1 },

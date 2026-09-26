@@ -1,6 +1,7 @@
 export const company = {
   name: "AI Pacino (Pty) Ltd",
   shortName: "AI Pacino",
+  siteUrl: "https://www.aipacino.org",
   registration: "2015/335068/07",
   certification: "SABS ISO 9001 Certified",
   tagline: "Built. Connected.",

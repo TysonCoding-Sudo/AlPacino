@@ -6,7 +6,6 @@ turbo/.cache/
 .turbo/
 *.tsbuildinfo
 pnpm-debug.log*
-next-env.d.ts
 .DS_Store
 
 # environment & local config — never commit secrets

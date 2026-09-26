@@ -1,10 +1,12 @@
+import { company } from "@ai-pacino/shared";
+
 export function GET() {
   const body = [
-    "Contact: https://aipacino.org/contact",
+    `Contact: ${company.siteUrl}/contact`,
     "Contact: mailto:bitsi@aipacino.co.za",
     "Expires: 2027-09-13T00:00:00.000Z",
     "Preferred-Languages: en",
-    "Canonical: https://aipacino.org/.well-known/security.txt",
+    `Canonical: ${company.siteUrl}/.well-known/security.txt`,
   ].join("\n");
 
   return new Response(body, {

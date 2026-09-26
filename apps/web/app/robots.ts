@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { company } from "@ai-pacino/shared";
 
 const aiBots = [
   "GPTBot",
@@ -48,7 +49,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://aipacino.org/sitemap.xml",
-    host: "https://aipacino.org",
+    sitemap: `${company.siteUrl}/sitemap.xml`,
+    host: company.siteUrl,
   };
 }
